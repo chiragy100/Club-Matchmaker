@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRHS Matchmaker Quiz</title>
+    <link rel="stylesheet" href="quiz-style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="bg-glow"></div>
+    <div class="bg-glow secondary"></div>
+
+    <div class="quiz-wrapper">
+        <div class="quiz-card" id="main-card">
+            <div class="quiz-header">
+                <div class="progress-info">
+                    <span id="q-number">Step 1 of 9</span>
+                    <span id="q-percent">0%</span>
+                </div>
+                <div class="progress-track">
+                    <div class="progress-fill" id="progressBar"></div>
+                </div>
+            </div>
+
+            <div id="question-container" class="fade-in">
+                <h2 id="q-text">Loading...</h2>
+                <div class="options-stack" id="options-container">
+                    </div>
+            </div>
+
+            <div id="results-screen" class="hidden">
+                <div class="results-header">
+                    <h2>Your Perfect Matches</h2>
+                    <p class="silver-text">Based on your personality and goals, we recommend:</p>
+                </div>
+                <div id="rankings-list" class="results-grid">
+                    </div>
+                <div class="results-footer">
+                    <button onclick="location.reload()" class="btn-primary">Try Again</button>
+                    <a href="index.html" class="btn-secondary">Return Home</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="engine.js"></script>
+</body>
+</html>
